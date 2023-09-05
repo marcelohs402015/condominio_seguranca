@@ -107,6 +107,3 @@ Você também verá quaisquer erros no console.
 
 
 
-
-------------------------------------------------------------------------------
-###### Leonardo B. Bussi © - 2020 [licença MIT](https://raw.githubusercontent.com/leonardobussi/condsystem/master/LICENSE)
