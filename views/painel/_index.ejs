@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/painel.css">
+  <title>condsystem</title>
+</head> 
+<body>
+  <header>
+    <h3>Cond<i>System</i></h3>
+
+    <nav>
+      <ul>
+        <li><a href="/adm/criar/">Registrar Morador</a></li>
+        <li><a href="/adm/">Registrar Administrador</a></li>
+        <li><a href="/adm/deslogar/">Sign out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="conteiner">
+    <div class="ocorrencia">
+      <h1>OCORRENCIAS</h1>
+
+      <% dados.forEach(i => {%>
+      <div class="card">
+        <h3> <%= i.nome %></h3>
+        <span> <%= i.data %></span>
+      </div>
+      <%}) %>
+
+    </div>
+  </div>
+  
+</body>
+</html>

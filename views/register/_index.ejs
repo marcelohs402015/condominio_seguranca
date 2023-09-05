@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/registroMorador.css">
+    <title>CondSystem</title>
+</head>
+
+    <body>
+        <header class="header-top">
+            <a onClick="javascript:window.location.href='/adm/painel', {danger: ''} "><i class="material-icons">arrow_back </i></a>
+            <span>Cond<i>System</i></span>
+        </header>
+
+        <div class="alerta">
+            <% if (danger == undefined || danger == null || danger2 == undefined || danger2 == null) {
+                danger = " "
+                danger2 = " "
+            }
+            %> 
+            <h3 id="alert1" class="alert1" > <%= danger %></h3>
+            <h3 id="alert2" class="alert2" > <%= danger2 %></h3>
+        </div>
+
+        <div class="container ">
+                   
+            <form method="POST" enctype="application/x-www-form-urlencoded">
+                <h3>Register</h3>
+
+                <div class="input names">
+
+                    <div class="name1">
+                        <label>Nome <strong>*</strong></label>
+                        <input 
+                            type="text" 
+                            name="nome" 
+                            required
+                            placeholder="digite seu nome"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="name2">
+                        <label>Nickname <strong>*</strong></label>
+                        <input  
+                            type="text" 
+                            name="nickname" 
+                            required
+                            placeholder="digite seu username"
+                            autocomplete="off"
+                        />
+                    </div>
+
+
+                </div>
+
+                <div class="input senhas">
+                    <div class="senha1">
+                        <label>Senha 1<strong>*</strong></label>
+                        <input
+                            type="password" 
+                            name="senha1" 
+                            required
+                            placeholder="digite sua senha 1" 
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="senha2">
+                        <label>Senha 2 <strong>*</strong></label>
+                        <input
+                            type="password" 
+                            name="senha2" 
+                            required
+                            placeholder="digite sua senha 2" 
+                            autocomplete="off"
+                        />
+                    </div>
+                </div>
+
+                <div class="input casas">
+                    <div class="casa1">
+                        <label>Numero <strong>*</strong></label>
+                        <input
+                            type="number" 
+                            name="numero" 
+                            required
+                            placeholder="Nº da casa" 
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div  class="casa2" >
+                        <label>Bloco <strong>*</strong></label>
+                        <input
+                            type="text" 
+                            name="bloco" 
+                            required
+                            placeholder="bloco da casa" 
+                            autocomplete="off"
+                        />
+                    </div>
+                </div>
+                
+                    <div class="btn">
+                        <button type="submit">Entrar</button>
+                    </div>
+                    
+               
+
+            </form>
+    </div>
+
+
+    </body>
+</html>
+
